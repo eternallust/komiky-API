@@ -51,4 +51,4 @@ app.group("/mangaky",(router) => {
     // router.get('/mangas',mangasController.index)
 })
 
-app.listen(port, () => console.log(`Listening on port ${port}!`))
+app.listen(process.env.PORT || 9876, () => console.log(`Listening on port ${port}!`))
